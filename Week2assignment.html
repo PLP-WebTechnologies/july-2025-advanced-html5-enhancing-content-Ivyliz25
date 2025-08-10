@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 advanced content and forms example with lists, tables, media, and validation.">
+    <meta name="author" content="Ivy Liz">
+    <title>G.O.A.Ts</title>
+</head>
+<body>
+    <header>
+        <h1>Everything Music</h1>
+    </header>
+
+    <main>
+        <!-- Lists Section -->
+        <section>
+            <h2>Top 5 Oldskool RnB Musicians</h2>
+            <ul>
+                <li>Chris Brown</li>
+                <li>Usher Raymond</li>
+                <li>NE-YO</li>
+                <li>Mario</li>
+                <li>Trey Songz</li>
+            </ul>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>Oversight</h2>
+            <table border="1" cellpadding="8">
+                <thead>
+                    <tr>
+                        <th>Name of Artist</th>
+                        <th>Genre</th>
+                        <th>His/Her most popular song</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chris Brown</td>
+                        <td>RnB</td>
+                        <td><input type="text" placeholder="Input his most popular song"></td>
+                    </tr>
+                    <tr>
+                        <td>Usher</td>
+                        <td>RnB</td>
+                        <td><input type="text" placeholder="Input his most popular song"></td>
+                    </tr>
+                    <tr>
+                        <td>Trey Songz</td>
+                        <td>RnB</td>
+                        <td><input type="text" placeholder="Input his most popular song"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section>
+            <h2>Embedded Media Examples</h2>
+            <figure>
+                <ol>
+                <img src="IMAGES/chris brown.jpeg" alt="Example image description" width="200">
+                <img src="IMAGES/Usher.jpg" alt="Example image description" width="200">
+                <img src="IMAGES/neyo.jpeg" alt="Example image description" width="200">
+                <img src="IMAGES/MARIO.webp" alt="Example image description" width="200">
+                <img src="IMAGES/TREY SONGZ.jpg" alt="Example image description" width="200">
+            </ol>
+                
+               
+            </figure>
+            <audio controls>
+                <source src="example-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video width="320" height="240" controls>
+                <source src="IMAGES/2022395-hd_1920_1080_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Form Section -->
+        <section>
+            <h2>Registration Form</h2>
+            <form action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6" pattern="[A-Za-z0-9]+">
+                    <br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <label for="language">Preferred Language:</label>
+                    <select id="language" name="language" required>
+                        <option value="">--Select--</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+    
+                    </select>
+                    <br><br>
+
+                    <label>
+                        <input type="checkbox" name="newsletter" checked>
+                        Subscribe to Newsletter
+                    </label>
+                    <br><br>
+
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="bio">Short Bio:</label><br>
+                    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about your insight..." required></textarea>
+                </fieldset>
+
+                <br>
+                <button type="submit">Submit Form</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ivy Liz. All rights reserved.</p>
+    </footer>
+</body>
+</html>
